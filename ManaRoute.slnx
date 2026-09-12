@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ManaRoute.Api/ManaRoute.Api.csproj" />
+    <Project Path="src/ManaRoute.Application/ManaRoute.Application.csproj" />
+    <Project Path="src/ManaRoute.Domain/ManaRoute.Domain.csproj" />
+    <Project Path="src/ManaRoute.Infrastructure/ManaRoute.Infrastructure.csproj" />
+    <Project Path="src/ManaRoute.Ingestion/ManaRoute.Ingestion.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ManaRoute.Domain.Tests/ManaRoute.Domain.Tests.csproj" />
+    <Project Path="tests/ManaRoute.Infrastructure.Tests/ManaRoute.Infrastructure.Tests.csproj" />
+  </Folder>
+</Solution>

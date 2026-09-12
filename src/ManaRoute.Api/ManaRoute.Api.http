@@ -1,0 +1,6 @@
+@ManaRoute.Api_HostAddress = http://localhost:5153
+
+GET {{ManaRoute.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
