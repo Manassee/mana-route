@@ -1,4 +1,4 @@
-<Solution>
+﻿<Solution>
   <Folder Name="/src/">
     <Project Path="src/ManaRoute.Api/ManaRoute.Api.csproj" />
     <Project Path="src/ManaRoute.Application/ManaRoute.Application.csproj" />

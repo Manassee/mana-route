@@ -427,3 +427,32 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# ----- Mana Route -----
+
+# Umgebungsvariablen / Secrets (nie committen)
+.env
+.env.*
+!.env.example
+
+# Lokale Konfiguration mit Graph-Client-Secret etc.
+appsettings.*.local.json
+appsettings.Local.json
+secrets.json
+
+# Lokale Postgres/PostGIS-Daten, falls als Bind-Mount gemountet
+/data/
+/.postgres/
+docker-compose.override.yml
+
+# Lokal abgerufene Onlogist-Mails (Rohdaten, personenbezogen)
+/mails/
+/dumps/
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# OS
+.DS_Store
+Thumbs.db
