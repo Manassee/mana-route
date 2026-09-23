@@ -21,7 +21,7 @@ namespace ManaRoute.Domain
                 return new StandortErgebnis.Fehler("Ort fehlt.");
 
             if (!(plz.Length == 5 && plz.All(char.IsAsciiDigit)))
-                return new StandortErgebnis.Fehler($"PLZ hat unerwartetes Format: '{plz}'");
+               return new StandortErgebnis.Fehler($"PLZ hat unerwartetes Format: '{plz}'");
 
             return new StandortErgebnis.Erfolg(new Standort(plz, ort));
         }
