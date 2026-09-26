@@ -4,4 +4,8 @@
     
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ManaRoute.Application\ManaRoute.Application.csproj" />
+  </ItemGroup>
+
 </Project>
