@@ -21,5 +21,28 @@ namespace ManaRoute.Infrastructure.Tests
 
             ergebnis.ShouldBeOfType<ParseErgebnis.KeineAuftragsmail>();
         }
+
+
+        [Fact]
+        public void BetreffZerlegen_mit_unpassendem_Betreff_liefert_null()
+        {
+            var daten = OnlogistMailParser.BetreffZerlegen("Ihre Rechnung für September");
+
+            daten.ShouldBeNull();
+        }
+
+
+
+        [Fact]
+        public void BetreffZerlegen_liefert_Id_und_Auftraggeber()
+        {
+            var betreff = "Benachrichtigung: Interessanter Auftrag (ID-# 2565560) von finn GmbH";
+
+            var daten = OnlogistMailParser.BetreffZerlegen(betreff);
+
+            daten.ShouldNotBeNull();
+            daten.OnlogistId.ShouldBe("2565560");
+            daten.Auftraggeber.ShouldBe("finn GmbH");
+        }
     }
 }
